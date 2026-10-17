@@ -1,0 +1,10 @@
+ShaderGradient (@shadergradient/react 2.4.20)
+https://github.com/ruucm/shadergradient
+MIT Copyright ruucm, stone-skipper
+
+Liquid Glass JS
+https://github.com/dashersw/liquid-glass-js
+Original Container shader included; adapted via LiveGlass subclass to sample ShaderGradient directly.
+Full license: LIQUID-GLASS-LICENSE.txt
+
+Other bundled library notices: effects.js.LEGAL.txt

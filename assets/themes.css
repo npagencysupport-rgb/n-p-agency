@@ -1,0 +1,56 @@
+/* Give glyph descenders room inside the gradient paint box. */
+.hero h1{line-height:1.12;overflow:visible;padding:.06em .03em .14em;letter-spacing:-.045em}
+.hero h1 .gradient{line-height:1.14;padding:.04em .04em .16em;margin:0 -.04em -.12em;overflow:visible;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+:root{color-scheme:dark}
+.theme-toggle{display:inline-flex;justify-content:center;align-items:center;flex-shrink:0;width:38px;height:38px;border-radius:50%;border:1px solid #f4f1de44;background:#ffffff0c;color:#f4f1de;cursor:pointer;box-shadow:inset 0 1px #ffffff22}
+.theme-toggle svg{width:19px;height:19px;pointer-events:none}
+.theme-toggle:hover{background:#d4c4a833}
+.theme-toggle:focus-visible{outline:2px solid var(--purple2);outline-offset:3px}
+.language-switch{margin-right:0}
+nav .nav-inner{gap:12px}
+html[data-theme=light]{color-scheme:light;--bg:#f4f1de;--text:#1b263b;--muted:#415a77;--purple:#bfa174;--purple2:#bfa174;--blue:#bfa174;--stroke:#415a7729;--card:#ffffffb8;--card-hover:#ffffffeb}
+html[data-theme=light] body{background:#f4f1de;color:var(--text)}
+html[data-theme=light] .page-bg{background:radial-gradient(ellipse at 65% 12%,#f4f1de88,transparent 65%),#f4f1de}
+html[data-theme=light] #shader-background{background:#f4f1de}
+html[data-theme=light] #shader-background>div{opacity:.18;filter:saturate(.65)}
+html[data-theme=light] #shader-background::after{background:linear-gradient(0deg,#f4f1de 0%,#f4f1de11 65%,#f4f1de22 100%)}
+html[data-theme=light] nav .nav-inner{background:linear-gradient(120deg,#ffffffde,#f4f1ded9);border-color:#bfa1743d;box-shadow:inset 0 1px #fff,0 12px 40px #415a7712}
+html[data-theme=light] .liquid-layer{opacity:.12!important;filter:brightness(2) saturate(.4)}
+html[data-theme=light] nav .nav-links{color:#415a77}
+html[data-theme=light] .logo span{color:#bfa174}
+html[data-theme=light] .theme-toggle{background:#fff9;border-color:#bfa17447;color:#415a77;box-shadow:inset 0 1px #fff}
+html[data-theme=light] .theme-toggle:hover{background:#f4f1de}
+html[data-theme=light] .language-switch{background:#f4f1de88;border-color:#bfa17444;box-shadow:inset 0 1px #fff}
+html[data-theme=light] .language-switch a{color:#415a77}
+html[data-theme=light] .language-switch a[aria-current]{background:#fff;color:#415a77;box-shadow:0 2px 8px #415a7719}
+html[data-theme=light] .hero-badge{background:#ffffffab;color:#415a77;border-color:#bfa1744d;box-shadow:inset 0 1px #fff}
+html[data-theme=light] h1 .gradient{background-image:linear-gradient(110deg,#bfa174,#415a77);color:transparent}
+html[data-theme=light] :is(main p,main li,.flow-card span,.hero-note,.footer-grid p,.footer-grid li,.footer-grid address,.copyright,.one-time,.number){color:#415a77}
+html[data-theme=light] :is(.kicker,.flow-card .number,.social-link,.status){color:#bfa174}
+html[data-theme=light] .glass{background:linear-gradient(135deg,#ffffffda,#f4f1deb3);border-color:#bfa17430;box-shadow:0 10px 34px #415a7708,inset 0 1px #fff}
+html[data-theme=light] .plan-accent{background:linear-gradient(145deg,#f4f1de,#ffffffdb);border-color:#bfa17488}
+html[data-theme=light] .early-projects{background:linear-gradient(120deg,#f4f1de,#f4f1de);border-color:#bfa17455}
+html[data-theme=light] .plan-label{border-color:#bfa17466}
+html[data-theme=light] .plan-card li::before{color:#16816b}
+html[data-theme=light] .button{color:#fff;background:linear-gradient(120deg,#bfa174,#bfa174);border-color:#bfa174;box-shadow:0 8px 24px #bfa17423,inset 0 1px #ffffff44}
+html[data-theme=light] .button.ghost{color:#415a77;background:linear-gradient(120deg,#ffffffdf,#f4f1deb8);border-color:#bfa17466;box-shadow:inset 0 1px #fff,0 8px 24px #bfa17411}
+html[data-theme=light] :is(.faq-item,footer){border-color:#bfa17433}
+html[data-theme=light] .timeline-dot{background:#f4f1de}
+html[data-theme=light] :is(input,textarea){background:#fff;color:#1b263b;border-color:#bfa17466}
+html[data-theme=light] :is(input,textarea)::placeholder{color:#bfa174}
+html[data-theme=light] dialog{background:#fff;color:#1b263b}
+html[data-theme=light] .widget{color-scheme:light;background:#f4f1de;color:#1b263b;border-color:#bfa174;box-shadow:0 20px 60px #415a7726}
+html[data-theme=light] .widget header{border-color:#d4c4a8}
+html[data-theme=light] .widget header button{color:#415a77}
+html[data-theme=light] :is(.widget header small,.widget-note){color:#415a77}
+html[data-theme=light] .widget-note a{color:#415a77}
+html[data-theme=light] .widget-msg{background:#f4f1de;color:#1b263b}
+html[data-theme=light] .widget-msg strong{color:#415a77}
+html[data-theme=light] .widget-msg.user{background:#bfa174;color:#fff}
+html[data-theme=light] .widget-msg.user strong{color:#f4f1de}
+html[data-theme=light] .widget-options button{background:#f4f1de;border-color:#d4c4a8;color:#415a77}
+html[data-theme=light] .widget-log{scrollbar-color:#d4c4a8 #f4f1de}
+@media(max-width:1200px){nav .nav-links>a:not(.button){display:none}}
+@media(max-width:600px){nav .nav-inner{gap:7px;padding:0 12px}.theme-toggle{width:34px;height:34px}.language-switch{margin-left:auto}.hero h1{line-height:1.15}}
+@media(max-width:480px){nav .nav-links{display:none}.language-switch{margin-right:3px}.theme-toggle{width:36px;height:36px}}
+html[data-theme=light] nav .nav-links a:not(.button):hover{color:#bfa174}

@@ -1,0 +1,24 @@
+/* Montell AI: ShaderGradient backdrop + Liquid Glass surfaces. */
+body{isolation:isolate;background:#0d1b2a}
+.page-bg{z-index:-2;background:radial-gradient(ellipse at 65% 12%,#1b263b88,transparent 60%),#0d1b2a}
+.page-bg .orb,.page-bg .grid{display:none}
+#shader-background{position:fixed;inset:0;z-index:-1;pointer-events:none;opacity:0;transition:opacity .6s;background:radial-gradient(ellipse at 75% 35%,#415a77,transparent 68%)}
+#shader-background::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#0d1b2a66,#0d1b2a22),linear-gradient(0deg,#0d1b2a 0%,transparent 45%,#0d1b2a22 100%);pointer-events:none}
+#shader-background canvas{display:block}
+nav{top:16px;background:none;border:0;backdrop-filter:none;padding:0 16px}
+nav .nav-inner{position:relative;height:68px;width:min(1240px,100%);padding:0 22px;border-radius:24px;border:1px solid #f4f1de33;background:linear-gradient(125deg,#f4f1de12,#0d1b2a99);backdrop-filter:blur(20px) saturate(1.3);box-shadow:inset 0 1px 0 #ffffff20,0 16px 48px #0003;isolation:isolate}
+nav .nav-links{gap:20px}
+nav .nav-links .button{font-size:12px;padding:12px 18px}
+.liquid-target{position:relative;isolation:isolate}
+.liquid-layer{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;pointer-events:none;z-index:-1;overflow:hidden;border-radius:inherit!important;transition:opacity .4s}
+.liquid-layer canvas{box-shadow:none!important;border-radius:inherit!important}
+.language-switch{background:linear-gradient(125deg,#ffffff12,#ffffff04);border-color:#f4f1de35;box-shadow:inset 0 1px #ffffff20}
+.language-switch a[aria-current]{background:linear-gradient(135deg,#d4c4a855,#bfa17435);box-shadow:inset 0 1px #fff3}
+.hero{min-height:100svh}
+.hero-badge{background:#0d1b2a66;border-color:#f4f1de3b;backdrop-filter:blur(12px);box-shadow:inset 0 1px #fff1}
+.hero-actions .ghost{background:linear-gradient(120deg,#ffffff17,#ffffff08);border-color:#f4f1de55;backdrop-filter:blur(12px);box-shadow:inset 0 1px #fff3,0 12px 36px #0003}
+.glass{background:linear-gradient(135deg,#ffffff09,#ffffff03);border-color:#f4f1de20}
+@media(max-width:1100px){nav .nav-links>a:not(.button){display:none}}
+@media(max-width:760px){nav{top:10px;padding:0 10px}nav .nav-inner{height:62px;padding:0 12px;gap:7px;border-radius:20px}nav .nav-links .button{font-size:10px;padding:10px;max-width:110px}.language-switch{margin-right:0}.hero{padding-top:140px}.liquid-layer{display:none}#shader-background::after{background:linear-gradient(0deg,#0d1b2a 0%,#0d1b2a44 60%)} }
+@media(prefers-reduced-motion:reduce){#shader-background{display:none}.orb{animation:none}.scroll-reveal{transition:none!important}nav .nav-inner{backdrop-filter:blur(12px)}}
+nav .nav-links{color:#d4c4a8}.hero-sub{color:#d4c4a8}.hero-note{color:#bfa174}
