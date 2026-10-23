@@ -1,0 +1,159 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.np-agency.com.ua"
+        }
+      ],
+      "destination": "https://np-agency.com.ua/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "np-agency-five.vercel.app"
+        }
+      ],
+      "destination": "https://np-agency.com.ua/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "montell-site.vercel.app"
+        }
+      ],
+      "destination": "https://np-agency.com.ua/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "/en.html",
+      "destination": "/en",
+      "statusCode": 301
+    },
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "query",
+          "key": "lang",
+          "value": "en"
+        }
+      ],
+      "destination": "/en",
+      "statusCode": 301
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/index.html",
+      "destination": "/en",
+      "statusCode": 301
+    },
+    {
+      "source": "/sites.html",
+      "destination": "/sites",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/sites.html",
+      "destination": "/en/sites",
+      "statusCode": 301
+    },
+    {
+      "source": "/promotion.html",
+      "destination": "/promotion",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/promotion.html",
+      "destination": "/en/promotion",
+      "statusCode": 301
+    },
+    {
+      "source": "/ai.html",
+      "destination": "/ai",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/ai.html",
+      "destination": "/en/ai",
+      "statusCode": 301
+    },
+    {
+      "source": "/privacy.html",
+      "destination": "/privacy",
+      "statusCode": 301
+    },
+    {
+      "source": "/en/privacy.html",
+      "destination": "/en/privacy",
+      "statusCode": 301
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/en",
+      "destination": "/en/index.html"
+    },
+    {
+      "source": "/sites",
+      "destination": "/sites.html"
+    },
+    {
+      "source": "/en/sites",
+      "destination": "/en/sites.html"
+    },
+    {
+      "source": "/promotion",
+      "destination": "/promotion.html"
+    },
+    {
+      "source": "/en/promotion",
+      "destination": "/en/promotion.html"
+    },
+    {
+      "source": "/ai",
+      "destination": "/ai.html"
+    },
+    {
+      "source": "/en/ai",
+      "destination": "/en/ai.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy.html"
+    },
+    {
+      "source": "/en/privacy",
+      "destination": "/en/privacy.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ],
+  "trailingSlash": false
+}
